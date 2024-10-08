@@ -35,7 +35,7 @@ export default function TaskDetails ({params}: TaskDetailsProps) {
       <PageBody className="text-left gap-3 bg-white rounded-lg w-full px-4 py-6">
         <div className="text-left w-full py-3 px-5">
           <h3 className="page-text-1 mb-5">{data?.title}</h3>
-          <TaskProperties status={data?.status} assignee={data?.assignee} date={data?.taskId}/>
+          {/* <TaskProperties status={data?.status} assignee={data?.assignee} date={data?.taskId}/> */}
           <Attachements/>
           <Description/>
           <Comments assignee={data?.assignee}/>

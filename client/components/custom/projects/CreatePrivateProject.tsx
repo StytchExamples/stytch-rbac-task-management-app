@@ -24,7 +24,7 @@ interface ProjectFormProps {
   isLoading?: boolean;
 }
 
-export function CreateProject({defaultValues, isLoading, onSubmit, schema}: ProjectFormProps) {
+export function CreatePrivateProject({defaultValues, isLoading, onSubmit, schema}: ProjectFormProps) {
   const form = useForm<ICreateProjectSchema>({
     resolver: zodResolver(schema),
     defaultValues: defaultValues,
@@ -40,7 +40,7 @@ export function CreateProject({defaultValues, isLoading, onSubmit, schema}: Proj
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Create public project</DialogTitle>
+          <DialogTitle>Create private project</DialogTitle>
           <DialogDescription>
             Enter the details for the new Project. Click create when you're done.
           </DialogDescription>
